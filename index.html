@@ -1,22 +1,59 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cửa Hàng Đồ Ăn Vặt</title>
+  <title>Đồ Ăn Vặt Online</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🍿 Cửa Hàng Đồ Ăn Vặt</h1>
-    <nav>
-      <a href="#products">Sản phẩm</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
+    <div class="container">
+      <h1>🍿 Đồ Ăn Vặt Online</h1>
+      <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="banner">
-    <h2>Chào mừng bạn đến với thiên đường ăn vặt!</h2>
-    <p>Ngon - Rẻ - Giao hàng tận nơi</p>
+  <section id="home" class="banner">
+    <div class="container">
+      <h2>Chào mừng đến với cửa hàng ăn vặt online!</h2>
+      <p>Ngon, nhanh, và tiện lợi</p>
+    </div>
   </section>
+
+  <section id="products" class="products container">
+    <h2>Danh sách sản phẩm</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/snack1.jpg" alt="Snack Tôm Cay">
+        <h3>Snack Tôm Cay</h3>
+        <p>Giá: 15.000đ</p>
+        <button>Thêm vào giỏ</button>
+      </div>
+      <div class="product-card">
+        <img src="images/snack2.jpg" alt="Bánh Tráng Trộn">
+        <h3>Bánh Tráng Trộn</h3>
+        <p>Giá: 20.000đ</p>
+        <button>Thêm vào giỏ</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Liên hệ</h2>
+      <p>📞 0909 123 456</p>
+      <p>📍 TP.HCM</p>
+      <p>📧 lienhe@anvat.vn</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Đồ Ăn Vặt Online</p>
+  </footer>
+</body>
+</html>
