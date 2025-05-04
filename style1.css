@@ -1,83 +1,88 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Đồ Ăn Vặt Online</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>🍿 Đồ Ăn Vặt Online</h1>
-      <nav>
-        <a href="#home">Trang chủ</a>
-        <a href="#products">Sản phẩm</a>
-        <a href="#contact">Liên hệ</a>
-      </nav>
-    </div>
-  </header>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
 
-  <section id="home" class="banner">
-    <div class="container">
-      <h2>Chào mừng đến với cửa hàng ăn vặt online!</h2>
-      <p>Ngon, nhanh, và tiện lợi</p>
-    </div>
-  </section>
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
 
-  <section id="products" class="products container">
-    <h2>Danh sách sản phẩm</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="images/snack1.jpg" alt="Snack Tôm Cay">
-        <h3>Snack Tôm Cay</h3>
-        <p>Giá: 15.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-      <div class="product-card">
-        <img src="images/snack2.jpg" alt="Bánh Tráng Trộn">
-        <h3>Bánh Tráng Trộn</h3>
-        <p>Giá: 20.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-      <div class="product-card">
-        <img src="images/snack3.jpg" alt="Khô Gà Lá Chanh">
-        <h3>Khô Gà Lá Chanh</h3>
-        <p>Giá: 35.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-      <div class="product-card">
-        <img src="images/snack4.jpg" alt="Xoài Lắc Muối Ớt">
-        <h3>Xoài Lắc Muối Ớt</h3>
-        <p>Giá: 18.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-      <div class="product-card">
-        <img src="images/snack5.jpg" alt="Chân Gà Sả Tắc">
-        <h3>Chân Gà Sả Tắc</h3>
-        <p>Giá: 30.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-      <div class="product-card">
-        <img src="images/snack6.jpg" alt="Bánh Gạo Cay">
-        <h3>Bánh Gạo Cay</h3>
-        <p>Giá: 12.000đ</p>
-        <button>Thêm vào giỏ</button>
-      </div>
-    </div>
-  </section>
+header {
+  background-color: #ff5722;
+  color: white;
+  padding: 20px 0;
+}
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Liên hệ</h2>
-      <p>📞 0909 123 456</p>
-      <p>📍 TP.HCM</p>
-      <p>📧 lienhe@anvat.vn</p>
-    </div>
-  </section>
+header h1 {
+  margin: 0;
+  text-align: center;
+}
 
-  <footer>
-    <p>&copy; 2025 Đồ Ăn Vặt Online</p>
-  </footer>
-</body>
-</html>
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #ffcc80;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.products {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
